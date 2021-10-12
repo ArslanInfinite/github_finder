@@ -5,6 +5,15 @@ class Github{
     }
     // one get request for the user, another for the repos of the user
     async getUser(user){
+        // query strings added together for client id and secret together
         const profileResponse = await fetch(`https://api.github.com/users/${user}?client_id=${this.client_id}&client_secret=${this.client_secret}`)
+
+        const profileData = await profileResponse.json()
+        
+        return{
+            // async and await allows for numerous aysnc operations 
+            // profile: profile can be reduced to...
+            profile
+        }
     }
 }
