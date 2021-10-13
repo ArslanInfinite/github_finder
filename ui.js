@@ -47,7 +47,15 @@ class UI {
     const search = document.querySelector('.search')
     // Insert alert
     container.insertBefore(div, search);
+  }
 
+  // clearing alert message
+
+  clearAlert(){
+      const currentAlert = document.querySelector('alert')
+      if(currentAlert){
+        currentAlert.remove
+      }
   }
 
     clearProfile(){
