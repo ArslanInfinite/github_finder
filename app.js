@@ -21,6 +21,7 @@ searchUser.addEventListener('keyup', (event) => {
         // show profile
         // showProfile takes in a user, this is got from data.profile
         ui.showProfile(data.profile);
+        ui.showRepos(data.repos)
       }
     })
   } else {
