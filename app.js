@@ -26,6 +26,6 @@ searchUser.addEventListener('keyup', (event) => {
         })
     } else {
         // clear profile
-        
+        ui.clearProfile()
     }
 })
